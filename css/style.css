@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: solid red 2px;
+}
+
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.015em;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #242E52;
+}
+
+button{
+    cursor: pointer;
+}
+
+button.GS{
+    display: flex;
+    padding: 12px 30px;
+    color: white;
+    border: none;
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;    
+    width: 134px;
+    height: 44px;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 65px 165px;
+}
+
+header h1{
+    height: 24px;
+    display: flex;
+}
+
+header nav ul{
+display: flex;
+list-style-type: none;
+}
+
+header nav ul li{
+    margin-left: 28px;
+}
+
+
+main section.home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 65px 165px;
+}
+
+main section article{
+    width: 40%
+}
+
+main section.home article h2{
+    color: #232C50;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: -0.035em;
+}
+
+main section article p{
+    text-align: left;
+    width: 70%;
+    padding: 28px 0;
+}
+
+main section.home article img{
+    width: 100%;
+}
+
+main section.sobre_nosotros article{
+    width: 40%;
+}
+main section.sobre_nosotros article:nth-of-type(2){
+    width: 50%;
+}
+
+main section.sobre_nosotros{
+    padding: 100px 163px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.sobre_nosotros article h3{
+    color: #232851;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 114.6%;
+    margin-bottom: 36px;
+}
+
+main section.sobre_nosotros article p{
+    width: 70%;
+}
+
+main section.sobre_nosotros article ol{
+    list-style-type: none;
+    counter-reset: olnumero;
+}
+
+main section.sobre_nosotros article ol li{
+    counter-increment: olnumero;
+    color: #323851;
+    font-weight: bold;
+    line-height: 23px;
+    display: block;
+}
+
+main section.sobre_nosotros article ol li::before{
+    position: relative;
+    background: #F3613C;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 25px 10px 25px;
+    border-radius: 25px;
+    display: block;
+    content: "0" counter(olnumero);
+    display: inline-block;
+    margin-right: 23px;
+    order: -1;
+}
+
+
+main section.sobre_nosotros article ol li p{
+    color: #B3B2B7;
+    line-height: 26px;
+    padding-left: 92px;
+    letter-spacing: -0.01em;
+    margin-bottom: 42px;
+    width: 100%;
+}
+
+main section.testimonios{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 71px;
+    text-align: center;
+}
+
+main section.testimonios h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+main section.testimonios div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 109px;
+}
+
+
+
+main section.testimonios div article{
+    background: #FAFAFA;
+    text-align: center;
+    width: 30%;
+}
+
+main section.testimonios div article img{
+    width: 70px;
+    position: relative;
+    bottom: 35px;
+}
+
+main section.testimonios div article span{
+    display: block;
+    font-weight: bold;
+    color: #3F4868;
+    
+}
+
+main section.testimonios div article p{
+    color: #B9B9C1;
+    padding: 21px;
+    width: 100%;
+    text-align: center;
+}
+
+main section:nth-child(4){
+    display: inline-flex;
+    background: #F3613C;
+    width: 100%;
+    padding: 64px 165px;
+    color: white;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+main section:nth-child(4) h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    width: 450px;
+}
+
+main section:nth-child(4) button{
+    color: #F3613C;
+    background: white;
+}
+
+footer{
+    background: #1E1E26;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 52px 165px;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+footer div img.LogoFooter{
+    width: 150px;
+}
+
+footer div img{
+    height: 26px;
+}
+
+footer div ul.redes{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0px;
+    width: 150px;
+}
+
+footer div ul.redes li a i{
+    color: white;
+    font-size: 20px;
+}
+
+footer div ul.redes li:nth-child(2) a img{
+    height: 20px;
+    margin:  0px;
+}
+
+footer div.indice{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+footer div.indice ul{
+    list-style-type: none;
+}
+
+footer div.indice ul li{
+    margin-bottom: 10px;
+}
+
+footer div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer div form{
+    display: inline-flex;
+}
+
+footer div form input{
+    border: none;
+    width: 201px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 12px 0 12px 10px;
+}
+
+footer div form button{
+    border: none;
+    color: white;
+    background: #F3603B;
+    width: 63px;
+    height: 42px;
+    border-radius: 50px;
+    margin-left: 9px;
+
+}
+
+footer div span{
+    display: block;
+    color: #8C8C94;
+    font-size: 12.5px;
+    text-align: right;
+}
+
+@media (max-width: 400px){
+
+    header{
+        padding: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header button.GS{
+        display: none;
+    }
+
+    header h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    }
+
+    header h1::after{
+        position: relative;
+        bottom: 5px;
+        content: url(../img/icon-hamburger.svg);
+        width: 20px;
+        margin-left: 40vw;
+        align-items: center;
+        cursor: pointer
+    }
+
+    main section.home{
+        padding: 50px 0;
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    main section:nth-of-type(1) article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main section article h2{
+        display: flex;
+        width: 100%;
+    }
+
+    main section article p{
+        width: 100%;
+    }
+
+    main section article:nth-of-type(2) img{
+        width: 90vw;
+    }
+
+    main section:nth-of-type(2){
+        padding: 50px 10px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    main section:nth-of-type(2) article{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    main section.sobre_nosotros article:nth-of-type(2){
+        width: 100%;
+    }
+
+    main section:nth-of-type(2) article h3{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+        main section:nth-of-type(2) article p{
+        width: 100%;
+        text-align: center;
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(2) ol{
+        width: 100%;
+        padding: 0px;
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(2) ol li span{
+        width: 100%;
+        background: rgba(243, 97, 60, 0.3);
+        flex-wrap: nowrap;
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(2) ol li p{
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    main section.sobre_nosotros article ol li::before {
+    margin: 0;
+    }
+
+    main section:nth-of-type(3){
+        padding: 50px 10px;
+        justify-content: space-evenly;
+    }
+    main section:nth-of-type(3) div article:nth-of-type(1){
+        display:none;
+    }
+    main section:nth-of-type(3) div article:nth-of-type(2){
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    main section:nth-of-type(3) div article:nth-of-type(3){
+        display:none;
+    }
+    
+    main section:nth-of-type(4){
+        padding: 50px 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main section:nth-of-type(4) h2{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        padding: 50px 0 100px;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items:center;
+        height: 100vh;
+    }
+
+    footer div:nth-of-type(1){
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    footer div:nth-of-type(1) ul.redes {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 30px 0,
+    }
+
+    footer div:nth-of-type(1) ul.redes li a i{
+        font-size: 40px;
+    }
+
+    footer div:nth-of-type(1) ul.redes li a img{
+        width: 40px;
+        height: 40px;
+    }
+
+    footer div:nth-of-type(1) img{
+        margin-top: 60px;
+    }
+
+    footer div.indice{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    footer div.indice ul{
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    footer div:nth-of-type(3){
+        align-items: center;
+    }
+
+    footer div:nth-of-type(3) span{
+        position: relative;
+        top: 70vh;
+    }
+
+}
